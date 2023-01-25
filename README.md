@@ -2,7 +2,7 @@
 
 ## Motivação
 
-No `módulo 03 - Conceitos fundamentais sobre o ciclo de vida do Javascript` vimos diferentes conceitos dentro do nosso querido Java Script, entao escolhemos os mais relevantes e desenvolvemos um desafios onde possam ser ultilizados.
+No `módulo 03 - Conceitos fundamentais sobre o ciclo de vida do Javascript` vimos diferentes conceitos dentro do nosso querido Java Script, então escolhemos os mais relevantes e desenvolvemos um desafios onde possam ser ultilizados.
 
 ## Idéia geral
 
@@ -31,7 +31,9 @@ Deve retornar a playlist da fake API Spotify
 ## Testes
 
 [ ] Unitários
+
 [ ] E2E
+
 [ ] Prototype das classes derivadas de `music.js`
 
 
@@ -67,7 +69,7 @@ project
 
   * [ ] Deve ter uma rota de `/spotify`, onde:
     * [ ] Deve consumir a rota `/spotify` da fake APIs
-    
+
   * [ ] Deve retornar um objeto JSON com essa estrutura 
   ```
   {
