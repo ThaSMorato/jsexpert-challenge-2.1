@@ -30,11 +30,11 @@ Deve retornar a playlist da fake API Spotify
 
 ## Testes
 
-[ ] Unitários
+* [ ] Unitários
 
-[ ] E2E
+* [ ] E2E
 
-[ ] Prototype das classes derivadas de `music.js`
+* [ ] Prototype das classes derivadas de `music.js`
 
 
 ### Arquitetura e onde trabalhar
