@@ -20,5 +20,9 @@
   "homepage": "https://github.com/ThaSMorato/jse-challenge-2.1#readme",
   "dependencies": {
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "json-server": "^0.17.1"
   }
 }
