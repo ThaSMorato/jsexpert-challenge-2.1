@@ -36,6 +36,8 @@ Deve retornar a playlist da fake API Spotify
 
 * [ ] Prototype das classes derivadas de `music.js`
 
+* [ ] Coersão de tipo devolvendo o esperado
+
 
 ### Arquitetura e onde trabalhar
 
@@ -94,14 +96,17 @@ project
   * [ ] Deve ter testes end-2-end que cubra todas as rotas
   * [ ] Deve ter relatório de 100% de code coverage
   * [ ] Deve testar o prototype das classes derivadas de `Music`
+  * [ ] Deve testar a coersão de tipo das classes derivadas de `Music`
 
 ## Iniciando
 
 1. `package.json` - Troque a versão do node para a sua versão atual (`node -v`) e coloque seu nome no `Author`.
 
-2. `npm i` - Escolha as bibliotecas de testes e instale elas (como as aulas do modulo 1 são com o CommonJS e as bibliotecas `chai`, `mocha`, `sinon` e `nyc`, as configuralções de coverage já foi feita pensando nelas).
+2. `npm run api` - Dar uma olhada no retorno da api e pensar na melhor estrategia para os dados retornados.
 
-3. ### Bora codar
+4. `npm i` - Escolha as bibliotecas de testes e instale elas (como as aulas do modulo 1 são com o CommonJS e as bibliotecas `chai`, `mocha`, `sinon` e `nyc`, as configuralções de coverage já foi feita pensando nelas).
+
+5. ### Bora codar
 
 ## Submissão
 
