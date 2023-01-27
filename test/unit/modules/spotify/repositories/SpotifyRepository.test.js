@@ -1,8 +1,8 @@
 import { beforeAll, describe, expect, it, jest } from '@jest/globals'
-import SpotifyRepository from '../../../../src/modules/spotify/repositories/SpotifyRepository';
-import SpotifyMusic from '../../../../src/modules/spotify/entities/spotifyMusic';
-import { spotifyApiMock, mock } from '../../../mocks/spotifyApiMock';
-import SpotifyMusicDTO from '../../../../src/modules/spotify/dto/spotifyMusicDTO';
+import SpotifyRepository from '../../../../../src/modules/spotify/repositories/SpotifyRepository';
+import SpotifyMusic from '../../../../../src/modules/spotify/entities/spotifyMusic';
+import { spotifyApiMock, mock } from '../../../../mocks/spotifyApiMock';
+import SpotifyMusicDTO from '../../../../../src/modules/spotify/dto/spotifyMusicDTO';
 
 describe('#SpotifyRepository', () => {
     let repository;
