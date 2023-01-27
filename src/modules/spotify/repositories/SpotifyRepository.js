@@ -10,7 +10,11 @@ export default class SpotifyRepository {
         const allMusics = await this.api.get('spotify');
 
         return allMusics
-        .map(raw_music => new SpotifyMusicDTO(raw_music))
+        .map(this.dataTransform)
         .map(music => new SpotifyMusic(music));
     }
+
+    dataTransform = (raw_music) => new SpotifyMusicDTO(raw_music);
+
+
 }
