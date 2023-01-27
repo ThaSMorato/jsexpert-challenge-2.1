@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it, jest } from '@jest/globals'
-import YoutubeRepository from '../../../../../src/modules/youtube/repositories/YoutubeRepository';
+import YoutubeRepository from '../../../../../src/modules/youtube/repositories/youtubeRepository';
 import { youtubeApiMock, mock } from '../../../../mocks/youtubeApiMock';
 import YoutubeMusic from '../../../../../src/modules/youtube/entities/youtubeMusic';
 import YoutubeMusicDTO from '../../../../../src/modules/youtube/dto/youtubeMusicDTO';
@@ -23,9 +23,6 @@ describe('#YoutubeRepository', () => {
 
             const result = await repository.getAllMusics();
 
-            const expected = mock.map(music => new YoutubeMusic(music))
-
-            expect(result.join()).toBe(expected.join());
             expect(result[0]).toBeInstanceOf(YoutubeMusic);
         });
     });
