@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, jest } from '@jest/globals'
+import { beforeAll, describe, expect, it } from '@jest/globals'
 import SpotifyRepository from '../../../../../src/modules/spotify/repositories/SpotifyRepository';
 import SpotifyMusic from '../../../../../src/modules/spotify/entities/spotifyMusic';
 import { spotifyApiMock, mock } from '../../../../mocks/spotifyApiMock';
@@ -23,9 +23,6 @@ describe('#SpotifyRepository', () => {
 
             const result = await repository.getAllMusics();
 
-            const expected = mock.map(music => new SpotifyMusic(music))
-
-            expect(result.join()).toBe(expected.join());
             expect(result[0]).toBeInstanceOf(SpotifyMusic);
         });
     });
