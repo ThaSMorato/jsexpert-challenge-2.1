@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from '@jest/globals'
-import SpotifyRepository from '../../../../../src/modules/spotify/repositories/SpotifyRepository';
+import SpotifyRepository from '../../../../../src/modules/spotify/repositories/spotifyRepository';
 import SpotifyMusic from '../../../../../src/modules/spotify/entities/spotifyMusic';
 import { spotifyApiMock, mock } from '../../../../mocks/spotifyApiMock';
 import SpotifyMusicDTO from '../../../../../src/modules/spotify/dto/spotifyMusicDTO';
