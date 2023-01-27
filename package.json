@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api": "npx json-server --watch api/fake-api-server.json --port 3001"
   },
   "repository": {
     "type": "git",
