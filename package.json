@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "api": "npx json-server --watch api/fake-api-server.json --port 3001"
+    "api": "npx json-server --watch api/fake-api-server.json --port 3001",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand --watchAll --config ./jest.config.js",
+    "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --watchAll --config ./jest.config.js",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest  --config ./jest.config.js --coverage"
   },
   "repository": {
     "type": "git",
