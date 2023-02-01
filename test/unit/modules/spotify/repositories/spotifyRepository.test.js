@@ -8,11 +8,11 @@ describe('#SpotifyRepository', () => {
     let repository;
 
     beforeAll(() => {
-        repository = new SpotifyRepository({api: spotifyApiMock})
+        repository = new SpotifyRepository({ api: spotifyApiMock })
     })
 
     describe(".getAllMusics", () => {
-        it('should call get on api with the string spotify as param',async  () => {
+        it('should call get on api with the string spotify as param', async () => {
             await repository.getAllMusics();
 
             expect(spotifyApiMock.get).toBeCalledTimes(1);
