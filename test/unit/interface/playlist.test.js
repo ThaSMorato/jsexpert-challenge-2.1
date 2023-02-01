@@ -1,4 +1,4 @@
-import { describe, expect, it, jest } from '@jest/globals'
+import { describe, expect, it } from '@jest/globals'
 import Playlist from '../../../src/interface/playlist'
 import SpotifyMusic from '../../../src/modules/spotify/entities/spotifyMusic'
 import formatMilisseconds from '../../../src/util/timeFormat'
