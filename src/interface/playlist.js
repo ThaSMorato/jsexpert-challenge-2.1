@@ -1,15 +1,32 @@
+import formatMilisseconds from "../util/timeFormat";
+
 export default class Playlist {
     constructor({ musics }) {
         this.musics = musics;
     }
 
-    showMusics() {
-        let miliseconds = 0;
+    toResponse() {
+        const { musics, duration } = this.musics.reduce(this.musicsTransformation, {
+            musics: [],
+            duration: 0,
+        });
 
-        this.musics.forEach((music) => {
-            console.log(`${music}`);
-            miliseconds += music;
-        })
-        console.log(miliseconds);
+        return {
+            musics: musics.map((music) => ({ ...music, duration: formatMilisseconds(music.duration) })),
+            duration: formatMilisseconds(duration)
+        }
+    }
+
+    musicsTransformation(prev, current) {
+        return {
+            musics: [
+                ...prev.musics,
+                {
+                    display: `${current}`,
+                    duration: +current,
+                }
+            ],
+            duration: prev.duration + current,
+        }
     }
 }
