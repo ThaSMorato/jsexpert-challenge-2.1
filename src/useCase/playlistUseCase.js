@@ -1,4 +1,4 @@
-import Playlist from "../interface/playlist";
+import Playlist from "../interface/playlist.js";
 
 class PlaylistUseCase {
   constructor({ repository }) {

@@ -1,4 +1,4 @@
-import formatMilisseconds from "../util/timeFormat";
+import formatMilisseconds from "../util/timeFormat.js";
 
 export default class Playlist {
     constructor({ musics }) {

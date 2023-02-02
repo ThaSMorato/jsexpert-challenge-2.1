@@ -1,8 +1,8 @@
-import PlaylistController from "../controller/playlistController";
-import SpotifyRepository from "../modules/spotify/repositories/spotifyRepository";
-import YoutubeRepository from "../modules/youtube/repositories/youtubeRepository";
-import PlaylistUseCase from "../useCase/playlistUseCase";
-import api from "../util/api";
+import PlaylistController from "../controller/playlistController.js";
+import SpotifyRepository from "../modules/spotify/repositories/spotifyRepository.js";
+import YoutubeRepository from "../modules/youtube/repositories/youtubeRepository.js";
+import PlaylistUseCase from "../useCase/playlistUseCase.js";
+import api from "../util/api.js";
 
 class ControllerFactory {
   static getSpotifyInstance() {

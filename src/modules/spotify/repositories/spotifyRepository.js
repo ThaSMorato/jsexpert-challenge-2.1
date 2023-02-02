@@ -1,8 +1,8 @@
-import SpotifyMusicDTO from "../dto/spotifyMusicDTO";
-import SpotifyMusic from "../entities/spotifyMusic";
+import SpotifyMusicDTO from "../dto/spotifyMusicDTO.js";
+import SpotifyMusic from "../entities/spotifyMusic.js";
 
 export default class SpotifyRepository {
-    constructor({ api }) { 
+    constructor({ api }) {
         this.api = api;
     }
 
@@ -10,8 +10,8 @@ export default class SpotifyRepository {
         const allMusics = await this.api.get('spotify');
 
         return allMusics
-        .map(this.dataTransform)
-        .map(music => new SpotifyMusic(music));
+            .map(this.dataTransform)
+            .map(music => new SpotifyMusic(music));
     }
 
     dataTransform = (raw_music) => new SpotifyMusicDTO(raw_music);
