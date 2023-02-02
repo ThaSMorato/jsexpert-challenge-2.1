@@ -8,31 +8,31 @@ export const youtubeApiMock = {
 
 export const mock = [
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 artist_name: "a"
-            },
-            album: {name: "aa"},
+            }],
+            album: { name: "aa" },
             name: "aaa",
             time_ms: 545488,
         }
     },
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 artist_name: "b"
-            },
-            album: {name: "bb"},
+            }],
+            album: { name: "bb" },
             name: "bbb",
             time_ms: 545488,
         }
     },
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 artist_name: "c"
-            },
-            album: {name: "cc"},
+            }],
+            album: { name: "cc" },
             name: "ccc",
             time_ms: 545488,
         }

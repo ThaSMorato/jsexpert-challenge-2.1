@@ -8,31 +8,31 @@ export const spotifyApiMock = {
 
 export const mock = [
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 name: "a"
-            },
-            album: { name: "aa"},
+            }],
+            album: { name: "aa" },
             name: "aaa",
             duration_ms: 156156,
         }
     },
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 name: "b"
-            },
-            album: { name: "bb"},
+            }],
+            album: { name: "bb" },
             name: "bbb",
             duration_ms: 156156,
         }
     },
     {
-        track:{
-            artists: {
+        track: {
+            artists: [{
                 name: "c"
-            },
-            album: { name: "cc"},
+            }],
+            album: { name: "cc" },
             name: "ccc",
             duration_ms: 156156,
         }
