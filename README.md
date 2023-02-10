@@ -6,7 +6,7 @@ No `módulo 03 - Conceitos fundamentais sobre o ciclo de vida do Javascript` vim
 
 ## Idéia geral
 
-Este desafio consiste em uma API (como feita no [desafio anterior](https://github.com/training-erickwendel/jsexpert-exercicio01-pokeapi)) com duas rotas, cada rota devolve uma playlist. 
+Este desafio consiste em uma API (como feita no [desafio anterior](https://github.com/training-erickwendel/jsexpert-exercicio01-pokeapi)) com duas rotas, cada rota devolve uma playlist.
 
 ## Funcionalidades
 
@@ -37,6 +37,14 @@ Deve retornar a playlist da fake API Spotify
 * [ ] Prototype das classes derivadas de `music.js`
 
 * [ ] Coersão de tipo devolvendo o esperado
+
+### Extras
+
+* [ ] TDD e BDD, será que rola? Acho que vale a tentativa!
+
+* [ ] Publicar o code coverage no github pages!
+
+* [ ] Consegue aplicar os conceitos de clonagem de Objeto?
 
 
 ### Arquitetura e onde trabalhar
@@ -72,7 +80,7 @@ project
   * [ ] Deve ter uma rota de `/spotify`, onde:
     * [ ] Deve consumir a rota `/spotify` da fake APIs
 
-  * [ ] Deve retornar um objeto JSON com essa estrutura 
+  * [ ] Deve retornar um objeto JSON com essa estrutura
   ```
   {
     musics:[ // Array de objetos
@@ -89,7 +97,7 @@ project
 - Youtube e Spotify Music
   * [ ] Deve derivar de `Music`
   * [ ] Cada um deve ter um método de coerção de tipo
-  * [ ] Os métodos de coerção devem ser diferentes para cada classe 
+  * [ ] Os métodos de coerção devem ser diferentes para cada classe
 
 - Testes
   * [ ] Deve ter testes unitários que cubra todas as funções
