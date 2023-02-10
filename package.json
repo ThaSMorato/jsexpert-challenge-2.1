@@ -1,7 +1,7 @@
 {
-  "name": "jse-2.1",
-  "version": "1.0.0",
-  "description": "",
+  "name": "challenge02-lifecycle",
+  "version": "1.1.0",
+  "description": "This is a code challenge where you are supposed to implement an API that returns a youtube or spotify playlist.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/ThaSMorato/jse-challenge-2.1.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Tests",
+    "Javascript",
+    "Code",
+    "Lifecycle",
+    "NodeJS",
+    "unit"
+  ],
   "author": "Thales Silva Morato (ThaSMorato)",
   "license": "MIT",
   "bugs": {
@@ -20,5 +27,8 @@
   "homepage": "https://github.com/ThaSMorato/jse-challenge-2.1#readme",
   "dependencies": {
     "moment": "^2.29.4"
+  },
+  "engines": {
+    "node" : "^18.13.0"
   }
 }
